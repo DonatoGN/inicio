@@ -30,25 +30,35 @@
 		-webkit-transform : scale(1.1);     /* Chrome - Safari */
 		-o-transform : scale(1.1);          /* Opera */
 	}
-	/* estilos para el enlace donatogomez.com */
-	.donatogomez {
-		color: white; /* Color inicial: Blanco */
+/* estilos para "donatogomez.com" */
+	.dgn {
+		color: gray;
 		font-weight: normal; 
 	}
-	.donatogomez:hover {
-		font-weight: bold; /* Rollover: Negrita */
-		color: white; /* Mantiene el color blanco */
+	.dgn:hover {
+		color: white;
+		font-weight: bold;
 	}
-        /* Simplificación de los estilos de enlace */
-        a {text-decoration: none;} 
 
-        span{
-            /* font-size si se necesita; si no, déjalo vacío o usa padding/width/height para dimensionar */
-            display: inline-block; /* Para que width/height funcione mejor si se usa, y para mejor control */
-            width: 20px; /* Ejemplo de cómo dimensionar */
-            height: 20px;
-            border: 2px solid #111111;
-        }
+/* estilos para "enlace.com" */
+	.enlace {
+		color: gray;
+		font-weight: normal; 
+	}
+	.enlace:hover {
+		color: white;
+		font-weight: normal;
+	}
+
+/* comun */
+	a {text-decoration: none;} 
+
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border: 2px solid #111111;
+	}
 </style>
 <script>
 const DEFAULT_COLOR = '#001600'; // Color por defecto definido
@@ -97,6 +107,12 @@ function fondo(pColor)
 			<a href="https://onedrive.live.com/" target="_blank"><img class="zoom" src="onedrive.png"></a>
 			<a href="https://www.dropbox.com/" target="_blank"><img class="zoom" src="dropbox.png"></a>
 			<a href="https://docstransfer.com/" target="_blank"><img class="zoom" src="documents.png"></a>
+            <br><br>
+			<a href="https://www.amd.com/en/support/downloads/drivers.html/chipsets/am5/x670e.html" target="_blank" class="enlace">AMD Chipset para X670E</a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="https://es.msi.com/Motherboard/X670E-GAMING-PLUS-WIFI/support" target="_blank" class="enlace">MSI X670E GAMING PLUS WIFI</a>
+			&nbsp;&nbsp;&nbsp;
+			<a href="https://www.nvidia.com/es-es/drivers/" target="_blank" class="enlace">NVIDIA Drivers</a>
 			<br><br>
             <a href="javascript:fondo('#001600')" onMouseOver="fondo('#001600')"><span style='background-color:#001600'></span></a>
             <a href="javascript:fondo('#013201')" onMouseOver="fondo('#013201')"><span style='background-color:#013201'></span></a>
@@ -104,14 +120,10 @@ function fondo(pColor)
             <a href="javascript:fondo('#032e4e')" onMouseOver="fondo('#032e4e')"><span style='background-color:#032e4e'></span></a>
             <a href="javascript:fondo('#00004d')" onMouseOver="fondo('#00004d')"><span style='background-color:#00004d'></span></a>
             <a href="javascript:fondo('#270349')" onMouseOver="fondo('#270349')"><span style='background-color:#270349'></span></a>
-            <br><br>
-            <a href="https://www.donatogomez.com" target="_blank" class="donatogomez">donatogomez.com</a>
+			<br><br>
+            <a href="https://www.donatogomez.com" target="_blank" class="dgn">donatogomez.com</a>
         </p>
     </div>
 </div>
 </body>
 </html>
-
-
-
-
